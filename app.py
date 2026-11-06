@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Мій перший додаток", layout="centered")
+st.set_page_config(page_title="Devaxx", layout="centered")
 
 hide_streamlit_style = """
             <style>
