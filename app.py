@@ -3,12 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Devaxx", layout="centered")
 
 hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            .stAppDeployDropdown {display: none !important;}
-            </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
@@ -28,4 +22,3 @@ st.markdown("<br>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    st.button("Натисни мене", on_click=on_click, use_container_width=True)
