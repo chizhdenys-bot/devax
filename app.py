@@ -2,7 +2,17 @@ import streamlit as st
 
 st.set_page_config(page_title="Devaxx", layout="centered")
 
-hide_streamlit_style = """
+hide_streamlit_style = """<style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .stAppDeployDropdown {display: none !important;}
+            /* Повне видалення нижньої панелі авторизації */
+            [data-testid="stStatusWidget"] {display: none !important;}
+            iframe + div {display: none !important;}
+            div[class^="stActionButton"] {display: none !important;}
+            footer, div[data-testid="stStatusWidget"], [data-testid="stStatusWidget"] {visibility: hidden !important; display: none !important;}
+            </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
